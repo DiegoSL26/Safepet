@@ -2,8 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:safepet/core/error/exceptions.dart';
 import 'package:safepet/data/models/report_model.dart';
 
-import '../models/report_model.dart';
-
 abstract class ReportDataSource {
   Future<DocumentReference> create({required ReportModel reportModel});
   Future<void> delete({required ReportModel reportModel});

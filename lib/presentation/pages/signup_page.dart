@@ -138,8 +138,8 @@ class _SignupPageState extends State<SignupPage> {
                         ),
                         const SizedBox(height: 16.0),
                         ElevatedButton(
-                          style:
-                              ElevatedButton.styleFrom(primary: Colors.black),
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.black),
                           onPressed: selectFile,
                           child: const Text('Seleciconar imagen'),
                         ),
@@ -156,7 +156,7 @@ class _SignupPageState extends State<SignupPage> {
                                   Expanded(
                                     child: ElevatedButton(
                                       style: ElevatedButton.styleFrom(
-                                          primary: Colors.black),
+                                          backgroundColor: Colors.black),
                                       onPressed: () async {
                                         if (_registerFormKey.currentState!
                                             .validate()) {

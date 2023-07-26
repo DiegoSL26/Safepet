@@ -32,9 +32,9 @@ class _LaunchPageState extends State<LaunchPage> {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         color: AppColors.blue900,
-        child: Column(
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             LogoWidget(),
             AppNameWidget(),
           ],

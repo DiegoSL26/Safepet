@@ -125,7 +125,7 @@ class _LoginPageState extends State<LoginPage> {
                                       Expanded(
                                         child: ElevatedButton(
                                           style: ElevatedButton.styleFrom(
-                                              primary: Colors.black),
+                                              backgroundColor: Colors.black),
                                           onPressed: () async {
                                             _focusEmail.unfocus();
                                             _focusPassword.unfocus();
@@ -167,7 +167,7 @@ class _LoginPageState extends State<LoginPage> {
                                       Expanded(
                                         child: ElevatedButton(
                                           style: ElevatedButton.styleFrom(
-                                              primary: Colors.black),
+                                              backgroundColor: Colors.black),
                                           onPressed: () => Navigator.pushNamed(
                                               context, '/signup'),
                                           child: const Text(

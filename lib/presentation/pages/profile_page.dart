@@ -34,12 +34,12 @@ class _ProfilePageState extends State<ProfilePage> {
           children: [
             Text(
               'NAME: ${_currentUser.displayName}',
-              style: Theme.of(context).textTheme.bodyText1,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
             const SizedBox(height: 16.0),
             Text(
               'EMAIL: ${_currentUser.email}',
-              style: Theme.of(context).textTheme.bodyText1,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
             const SizedBox(height: 16.0),
             _currentUser.emailVerified
@@ -47,14 +47,14 @@ class _ProfilePageState extends State<ProfilePage> {
                     'Email verified',
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1!
+                        .bodyLarge!
                         .copyWith(color: Colors.green),
                   )
                 : Text(
                     'Email not verified',
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1!
+                        .bodyLarge!
                         .copyWith(color: Colors.red),
                   ),
             const SizedBox(height: 16.0),
@@ -106,7 +106,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       Navigator.pushNamed(context, '/login');
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.red,
+                      backgroundColor: Colors.red,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30),
                       ),
